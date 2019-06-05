@@ -18,11 +18,11 @@
             </select><br><br>
             <?php
 
-                $camadas = '<label>Numero de camadas</label><br>
+                $camadas = '<label>Número de camadas</label><br>
                 <input type="number" min="3" max="5"name="numero-camadas" value=""><br><br>';
 
-                $classe_camadas = '<label>Classe da camada</label><br>
-                <input type="radio" name="classe-camada" value="all">Tudo
+                $classe_camadas = '<label>Classe de tamanho</label><br>
+                <input type="radio" name="classe-camada" value="all">Todas
                 <input type="radio" name="classe-camada" value="">Até 80
                 <input type="radio" name="classe-camada" value="">Entre 50 e 100
                 <input type="radio" name="classe-camada" value="">Até 120
@@ -31,7 +31,7 @@
                 <input type="radio" name="classe-camada" value="">Até 1000
                 <br><br>';
 
-                $janela = '<label>Tamanho Janela</label><br>
+                $janela = '<label>Tamanho da Janela</label><br>
                 <input type="number" min="1" max="5" name="tamanho-janela" value=""><br><br>';
 
                 if (!isset($_POST['opcoes'])) {
@@ -42,19 +42,19 @@
                         echo $camadas;
                         echo $classe_camadas;
                         echo $janela;
-                        echo '<input type="submit" name="enviar" value="buscar"></form>';
+                        echo '<input type="submit" name="enviar" value="Buscar"></form>';
                     }
                     if ($_POST['opcoes']==2) {
                         echo '<form action="processa.php" method="post">';
                         echo $camadas;
                         echo $classe_camadas;
-                        echo '<input type="submit" name="enviar" value="buscar"></form>';
+                        echo '<input type="submit" name="enviar" value="Buscar"></form>';
                     }
                     if ($_POST['opcoes']==3) {
                         echo '<form action="processa.php" method="post">';
                         echo $classe_camadas;
                         echo $janela;
-                        echo '<input type="submit" name="enviar" value="buscar"></form>';
+                        echo '<input type="submit" name="enviar" value="Buscar"></form>';
                     }
                 }
              ?>
@@ -62,7 +62,6 @@
 
         </form>
     </center>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    
     </body>
 </html>
